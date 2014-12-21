@@ -6,7 +6,9 @@ import com.mycompany.calendar.domain.CalendarUser;
 
 public interface CalendarUserDao {
     public CalendarUser findUser(int id);
-
+    
+    public List<CalendarUser> findUsersByAttendeeId(int attendeeid);
+    
     public CalendarUser findUserByEmail(String email);
 
     public List<CalendarUser> findUsersByEmail(String partialEmail);
